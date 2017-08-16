@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+     
+
+    android:background="@color/color_gray_bg"
+     >
+<!--  
+   <ProgressBar
+        android:id="@+id/activity_splash_progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="invisible"/>
+-->
+    <ImageView
+        android:id="@+id/streams_splash"
+        android:contentDescription="@string/streams_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_4in"
+        android:spacing="0dp" />
+    
+</RelativeLayout>

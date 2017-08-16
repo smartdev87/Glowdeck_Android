@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_darker_gray_bg"
+    android:clickable="false"
+    android:enabled="false"
+    android:focusable="false" >
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    
+    android:background="@color/color_darker_gray_bg"
+    android:orientation="vertical" >
+    
+    
+    
+
+    <TextView
+        android:id="@+id/login_userid_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_userid_edit"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/user_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+
+    <TextView
+        android:id="@+id/login_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_userid_edit"
+        android:layout_below="@+id/login_userid_edit"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+
+    
+
+    <ImageView
+        android:id="@+id/streams_logo_transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/streams_logo"
+       
+    	android:maxWidth="150dip"
+    	android:scaleType="centerCrop"
+    	android:adjustViewBounds ="true"
+       
+       
+       
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/streams_beta" />
+
+    <Button
+        android:id="@+id/login_loginButton"
+        style="?android:attr/buttonStyleSmall"
+        android:padding="5dip"
+        
+        android:layout_width="wrap_content"
+        
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/login_remember_CB"
+        android:layout_alignBottom="@+id/login_remember_CB"
+        android:layout_alignRight="@+id/login_password_edit"
+        android:textColor="@color/color_white" 
+        android:background="@drawable/login_login_button_selector"
+        android:width="80dp"
+        android:text="@string/login" />
+
+    <CheckBox
+        android:id="@+id/login_remember_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_password_edit"
+        android:layout_below="@+id/login_password_edit"
+        android:layout_marginTop="18dp"
+        android:checked="true"
+       
+        
+        android:textColor="@color/color_white" 
+         />
+
+    <TextView
+        android:id="@+id/login_noaccount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/no_account"
+        android:textColor="@color/color_off_white"
+        android:textSize="12sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/create_account_button"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/streams_logo_transparent"
+        android:layout_alignRight="@+id/login_noaccount_text"
+        android:layout_below="@+id/login_noaccount_text"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/login_newaccount_button_selector"
+        android:typeface="sans"
+        android:text="@string/create_account" />
+
+    <TextView
+        android:id="@+id/login_version_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/streams_logo_transparent"
+        android:text="@string/build_version"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_off_white" />
+
+    <EditText
+        android:focusable="true"
+        android:id="@+id/login_userid_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_userid_text"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_login_edittext"
+        android:textColor="@color/color_white"
+        android:ems="12"
+        android:imeOptions="flagNoExtractUi"
+        android:padding="5dip" 
+        android:gravity="left|center_vertical"
+        android:inputType="textEmailAddress" />
+    
+    <EditText
+        android:id="@+id/login_password_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_password_text"
+        android:layout_alignRight="@+id/login_userid_edit"
+        android:layout_below="@+id/login_password_text"
+        android:background="@color/color_login_edittext"
+        android:textColor="@color/color_white"
+        android:ems="10"
+        android:imeOptions="flagNoExtractUi"
+        android:padding="5dip" 
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/stayLoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/login_remember_CB"
+        android:layout_alignBottom="@+id/login_remember_CB"
+        android:layout_toRightOf="@+id/login_remember_CB"
+        android:layout_marginLeft="5dp"
+        android:text="@string/remember_me"
+        android:textColor="@color/color_off_white" />
+
+    
+
+</RelativeLayout>
+ </ScrollView>

@@ -1,0 +1,18 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_darker_gray_bg"
+    tools:context="com.plsco.glowdeck.ui.MainActivity" >
+    
+    <fragment 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/color_darker_gray_bg"
+         android:id="@+id/fragment_streams_top"
+         android:name="com.plsco.glowdeck.drawer.StreamsFragment"
+        />
+
+</LinearLayout>

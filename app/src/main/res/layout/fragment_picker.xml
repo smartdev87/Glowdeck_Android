@@ -1,0 +1,177 @@
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pickerParentScroll"
+  android:layout_width="match_parent"
+   android:background="#000"
+  android:layout_height="match_parent">
+<LinearLayout  
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context=".Main"
+    android:weightSum="1">
+
+ 
+    <RelativeLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Switch
+            android:id="@+id/nightSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:paddingRight="12dp"
+            android:text="Streams"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:textColor="@color/color_off_white" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/textViewDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="Display"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+    <!--
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_darker_off_white_text"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" />
+    -->
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textViewDisplay" />
+
+    <!--
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_darker_off_white_text"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp" />
+    -->
+	 </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_gray_bg"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" />
+
+<!--
+    <TextView
+        android:id="@+id/textViewPicketInteract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="12dp"
+        android:text="Touch to interact with lights"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_off_white" />
+-->
+    <Button
+        android:id="@+id/animations_button"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/color_darker_gray_bg"
+        android:text="Animations"
+        android:textColor="@color/white" />
+
+    <com.plsco.glowdeck.colorpicker.ColorPicker
+        android:id="@+id/picker"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.19" />
+
+    <com.plsco.glowdeck.colorpicker.SVBar
+        android:id="@+id/svbar"
+        android:layout_width="322dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#222"
+        android:layout_margin="8dip" />
+
+    <com.plsco.glowdeck.colorpicker.OpacityBar
+        android:id="@+id/opacitybar"
+        android:layout_width="322dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dip"
+        android:background="#222"
+        android:paddingBottom="8dip" />
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2" >
+ 
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glowdeck"
+            android:layout_weight="1" />
+  
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="0sp"
+            android:layout_weight="1" />
+   
+    </LinearLayout>
+    -->
+
+</LinearLayout>
+</ScrollView>

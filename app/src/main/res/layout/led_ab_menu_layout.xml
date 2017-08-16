@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="@color/color_led_bg"
+    android:clickable="true"
+    
+    android:contentDescription="tbd" >
+<!-- android:scaleType="centerInside" "centerCrop"
+style="?android:attr/actionButtonStyle"
+-->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        
+        android:src="@drawable/led_on" />
+
+</RelativeLayout>

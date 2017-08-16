@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_darker_gray_bg"
+   
+    >
+ 
+
+    <ImageView
+        android:id="@+id/icon_indset"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/color_gray_bg"
+        android:tag="@string/settings_icon"
+        android:src="@drawable/ic_launcher" />
+  
+    <ImageView
+        android:id="@+id/icon_indset_del"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+       
+        android:background="@color/color_gray_bg"
+        
+        android:src="@drawable/blue_right_arrow_framed" />
+
+    <LinearLayout
+        android:layout_marginLeft="1dp"
+      
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon_indset"
+        android:layout_alignTop="@+id/icon_indset"
+        android:layout_toLeftOf="@+id/icon_indset_del"
+        android:layout_toRightOf="@+id/icon_indset"
+        android:layout_weight="1"
+        android:background="@color/color_darker_gray_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp" >
+
+         <TextView
+        android:id="@+id/textview_ind_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	android:layout_gravity="center_vertical"
+        android:background="@color/color_darker_gray_bg"
+        android:text="@+id/label"
+    
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+        
+         
+        
+        
+        
+        
+    </LinearLayout>
+    
+   
+     
+     
+     
+
+</RelativeLayout> 
+ 
+
+
+<!--  
+
+ 
+<ImageView
+        android:id="@+id/individual_settings_imageview"
+       android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+       android:layout_width="40dp"
+        android:layout_height="40dp"
+         android:background="@color/buttonColorSetting"
+          android:tag="@string/settings_icon"
+        android:src="@drawable/ic_launcher" />
+ 
+ <ImageView
+        android:id="@+id/individual_settings_delete_imageview"
+         android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+         android:tag="@string/settings_icon"
+        android:layout_alignParentLeft="true"
+        android:background="@color/buttonColorSetting"
+        android:src="@drawable/ic_launcher" />
+ 
+ 
+    <TextView
+        android:id="@+id/individual_settings_textView"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="@color/color_off_white"
+          android:background="@color/color_darker_gray_bg"
+        android:text="TextView" />
+        
+        -->

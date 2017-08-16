@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.plsco.glowdeck" android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="25" />
+
+	<uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED">
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.BLUETOOTH">
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN">
+    </uses-permission>
+
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+	</uses-permission>
+
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+	</uses-permission>
+
+	<uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+
+	<!-- android:screenOrientation="portrait" -->
+
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+
+	<application android:allowBackup="true"
+		android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name" android:name="com.plsco.glowdeck.ui.StreamsApplication"
+		android:theme="@style/AppTheme">
+		<activity android:name="com.plsco.glowdeck.ui.SplashActivity"
+			android:label="@string/app_name" android:launchMode="singleTop"
+			android:theme="@style/Theme.streams">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<!-- android:configChanges="orientation" -->
+		<activity android:name="com.plsco.glowdeck.ui.MainActivity"
+			android:imeOptions="flagNoExtractUi">
+		</activity>
+		<activity android:name="com.plsco.glowdeck.orders.OrdersActivity"
+			android:theme="@style/Theme.streams">
+		</activity>
+		<activity android:name="com.plsco.glowdeck.ui.WebViewActivity"
+			android:configChanges="orientation|screenSize"
+			android:hardwareAccelerated="false">
+		</activity>
+		<activity android:name="com.plsco.glowdeck.ui.EmailViewActivity">
+		</activity>
+		<!--     -->
+		<activity android:name="com.plsco.glowdeck.colorpicker.AppConfig"
+		    android:configChanges="orientation"
+		    android:theme="@style/ThemePrefs"
+		   >
+        </activity>
+        <!--android:theme="@style/ThemePrefs"
+         android:screenOrientation="portrait" -->
+		<activity android:name="com.plsco.glowdeck.ui.NewWebAccountActivity"
+			android:configChanges="orientation|screenSize"
+			android:hardwareAccelerated="false">
+		</activity>
+		<!-- android:screenOrientation="portrait" -->
+		<activity android:name="com.plsco.glowdeck.auth.LoginActivity"
+			android:imeOptions="flagNoExtractUi" />
+		<activity android:name="com.plsco.glowdeck.auth.CreateAccount"
+			android:windowSoftInputMode="stateHidden|adjustResize"
+			android:parentActivityName="com.plsco.glowdeck.auth.LoginActivity">
+			<meta-com.glowdeck.streams.streamdata
+				android:name="android.support.PARENT_ACTIVITY" android:value="com.plsco.glowdeck.auth.LoginActivity" />
+		</activity>
+
+
+		<activity android:name="com.plsco.glowdeck.settings.IndividualSettingsActivity">
+		</activity>
+		<!-- android:screenOrientation="portrait" -->
+		<activity android:name="com.plsco.glowdeck.settings.StreamsSettingsActivity"
+			android:label="@string/title_activity_stream_settings">
+
+		</activity>
+		<activity
+            android:name="com.plsco.glowdeck.bluetooth.BTDeviceListActivity"
+            android:label="@string/select_device"
+            
+            android:theme="@style/AppTheme.Dialog" >
+        </activity>
+		
+		
+		<!--
+		android:screenOrientation="portrait" -->
+		<receiver android:name="com.plsco.glowdeck.services.NetStatusReceiver">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.plsco.glowdeck.services.BTstatusReceiver"
+		    android:enabled="true"
+            android:exported="false">
+			<intent-filter>
+			    <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+			    
+			</intent-filter>
+		</receiver>
+
+		<receiver android:name="com.plsco.glowdeck.services.UpdaterService$USAlarmReceiver" />
+		<receiver android:name="com.plsco.glowdeck.services.BootReceiver">
+			  
+			<intent-filter>
+				    
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				  
+			</intent-filter>
+		</receiver>
+
+		<service android:name="com.plsco.glowdeck.services.UpdaterService" />
+
+
+	</application>
+
+</manifest>

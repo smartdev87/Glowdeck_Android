@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_darker_gray_bg"
+    android:orientation="vertical" >
+    <ProgressBar
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_gravity="center"
+       android:background="@drawable/streams_icon"
+      	android:layout_marginTop="20dp"
+       android:id="@+id/progressBar1"/> 
+    <WebView
+        android:id="@+id/web_view"
+        android:background="@color/color_darker_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

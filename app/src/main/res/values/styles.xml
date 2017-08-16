@@ -1,0 +1,198 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+     <!--
+<style name="AppBaseTheme" parent="android:Theme.Black">
+  -->
+  <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+</style>
+
+   <style name="Theme_Holo_Black_DarkActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+   <item name="android:windowBackground">@android:color/black</item>
+   <item name="android:divider">@android:color/white</item>
+</style>   
+
+   <style name="Theme_Holo_Gray_DarkActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+   <item name="android:windowBackground">@color/color_darker_gray</item>
+  
+ 
+</style>
+<style name="Theme_Holo_Gray_NoActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+   <item name="android:windowNoTitle">true</item>
+  
+ 
+</style>
+  
+  <!--  <item name="android:divider">@android:color/white</item> -->
+   <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+<!--     parent="Theme.AppCompat.Light" -->
+
+   
+        <!--
+         <style name="AppBaseTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        	
+        	<style name="AppBaseTheme" parent="@android:style/Theme.Holo.NoActionBar">
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+             </style>
+        -->
+   
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.streams" parent="style/AppTheme">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style> 
+    
+    
+    
+     <style name="ThemePrefs" parent="style/Theme_Holo_Gray_DarkActionBar">
+          <item name="android:textColor">@color/preftextcolor</item>
+          <item name="android:textColorSecondary">@color/color_off_white</item>
+          <item name="android:textColorPrimary">@color/black</item>
+          <item name="android:listDivider">@drawable/straightlinewider2</item>
+  
+    </style>
+    
+    
+     
+     <!--  
+     
+     <item name="android:textColor">@android:color/white</item>
+          <item name="android:textColorPrimary">@color/black</item>
+           <item name="android:textColorSecondary">@android:color/primary_text_dark</item>
+          <item name="android:textColorHint">@android:color/black</item>
+           <item name="android:textColorTertiary">@android:color/white</item>
+     <item name="android:listDivider">@drawable/straightlinewhiter</item>
+     <item name="android:divider">@color/white</item> 
+     
+     
+      <item name="android:divider">@drawable/straightlinegray</item>
+      <item name="android:dividerHorizontal">@drawable/straightlinegray</item>
+      <item name="android:childDivider">@drawable/straightlinegray</item>
+     
+      <item name="android:horizontalDivider">@color/white</item>
+      
+      <item name="android:listDivider">@drawable/straightlinegray</item>
+      <item name="android:dividerHorizontal">@drawable/straightlinewider2</item>
+          <item name="android:childDivider">@drawable/straightlinewider2</item>
+          <item name="android:horizontalDivider">@color/white</item>
+     
+        <item name="android:dividerHorizontal">@drawable/straightlinewhiter</item>
+            <item name="android:horizontalDivider">@drawable/straightlinewhiter</item>
+     <item name="android:textColorPrimary">@android:color/white</item>
+        
+          <item name="android:textColorTertiary">@android:color/white</item>
+          <item name="android:textColorHint">@android:color/white</item>
+           
+          
+     
+     
+     
+     
+      <item name="android:textColorHint">@android:color/white</item>
+    <item name="android:textColorHintInverse">@android:color/white</item>
+    <item name="android:colorForeground">@android:color/white</item>
+     <item name="android:textColorSecondary">@android:color/white</item>
+    <item name="android:textColorTertiary">@android:color/white</item>
+    <item name="android:textColorPrimaryInverse">@android:color/white</item>
+    <item name="android:textColorSecondaryInverse">@android:color/white</item>
+    <item name="android:textColorTertiaryInverse">@android:color/white</item>
+    <item name="android:textColorPrimaryDisableOnly">@android:color/white</item>
+    <item name="android:textColorPrimaryInverseDisableOnly">@android:color/white</item>
+    <item name="android:textColorPrimaryNoDisable">@android:color/white</item>
+    <item name="android:textColorSecondaryNoDisable">@android:color/white</item>
+    <item name="android:textColorPrimaryInverseNoDisable">@android:color/white</item>
+    <item name="android:textColorSecondaryInverseNoDisable">@android:color/white</item>
+  -->
+     <style name="MyTextAppearanceLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/white</item>
+      </style>
+      
+       <style name="MyTextAppearanceMedium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+      </style>
+      
+        <style name="MyTextAppearanceSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/white</item>
+      </style>
+    
+     <!--  
+     <item name="android:textAppearanceLarge">@style/MyTextAppearanceLarge</item>
+         <item name="android:textAppearanceMedium">@style/MyTextAppearanceMedium</item>
+         <item name="android:textAppearanceSmall">@style/MyTextAppearanceSmall</item>
+     <item name="android:listViewStyle">@style/listViewPrefs</item>
+     <item name="android:textColorPrimary">@android:color/white</item>
+         <item name="android:textColorSecondary">@android:color/white</item>
+         <item name="android:textColorHighlight">@android:color/white</item>
+          <item name="android:textAppearanceLarge">@android:color/white</item>
+           <item name="android:textAppearanceMedium">@android:color/white</item>
+           <item name="android:textAppearanceSmall">@android:color/white</item>
+     
+     
+     
+     <item name="android:textColorPrimary">@android:color/white</item>
+         <item name="android:textColorSecondary">@android:color/white</item>
+          <item name="android:textAppearanceLarge">@android:color/white</item>
+          <item name="android:textColorHighlight">@android:color/white</item>
+           <item name="android:textAppearanceMedium">@android:color/white</item>
+           <item name="android:textAppearanceSmall">@android:color/white</item>
+	-->
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+ 
+    <style name="SpinnerTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@drawable/streams_icon_sharper</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item> 
+    </style> 
+    <style name="AppBaseTheme.Dialog" parent="android:style/Theme.Dialog">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <!-- Application theme. -->
+
+    <!--<style name="AppTheme" parent="AppBaseTheme"> -->
+       <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <!--</style>-->
+
+    <style name="AppTheme.Dialog" parent="AppBaseTheme.Dialog">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

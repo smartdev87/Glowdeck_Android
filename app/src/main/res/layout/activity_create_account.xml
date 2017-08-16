@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollX="0dp"  
+    android:scrollY="1dp"
+    android:background="@color/color_darker_gray_bg"
+    >
+<RelativeLayout 
+   
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal" 
+	
+	android:background="@color/color_darker_gray_bg"
+	 
+	android:orientation="vertical">
+
+    <ImageView
+        android:contentDescription="@string/create_streams_account"
+        android:id="@+id/create_account_imageView"
+        android:layout_width="wrap_content"
+        android:scaleType="fitCenter"
+        android:paddingLeft="75dp"
+        android:paddingRight="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/create_account" />
+    
+    <TextView
+        android:id="@+id/create_account_userid_text"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_account_imageView"
+        android:layout_alignLeft="@+id/create_account_userid_edit"
+        android:text="@string/email_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+  <!--android:focusable="true"  -->  
+     <EditText
+        
+        android:id="@+id/create_account_userid_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_account_userid_text"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_login_edittext"
+        android:textColor="@color/color_white"
+        android:ems="12"
+        android:padding="5dip" 
+        android:gravity="left|center_vertical"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textEmailAddress" />
+     
+     <TextView
+        android:id="@+id/create_account_first_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_userid_edit"
+        android:layout_marginTop="10dp"
+        android:text="@string/first_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+     
+      <EditText
+        android:id="@+id/create_account_first_name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_first_name_text"
+        android:layout_alignRight="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_first_name_text"
+        android:background="@color/color_login_edittext"
+        android:textColor="@color/color_white"
+        android:ems="10"
+        android:padding="5dip" 
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textPersonName" />
+      
+      <TextView
+        android:id="@+id/create_account_last_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_first_name_edit"
+        android:layout_marginTop="10dp"
+        android:text="@string/last_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+      
+      <EditText
+        android:id="@+id/create_account_last_name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_first_name_text"
+        android:layout_alignRight="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_last_name_text"
+        android:background="@color/color_login_edittext"
+        android:textColor="@color/color_white"
+        android:ems="10"
+        android:padding="5dip" 
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textPersonName" />
+      
+       <TextView
+        android:id="@+id/create_account_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_last_name_edit"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+       
+       <EditText
+        android:id="@+id/create_account_password_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_first_name_text"
+        android:layout_alignRight="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_password_text"
+        android:background="@color/color_login_edittext"
+        android:textColor="@color/color_white"
+        android:ems="10"
+        android:padding="5dip" 
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textPassword" />
+       
+       <TextView
+        android:id="@+id/create_account_confirm_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_password_edit"
+        android:layout_marginTop="10dp"
+        android:text="@string/confirm_password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_off_white" />
+       
+       <EditText
+        android:id="@+id/create_account_confirm_password_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_account_first_name_text"
+        android:layout_alignRight="@+id/create_account_userid_edit"
+        android:layout_below="@+id/create_account_confirm_password_text"
+        android:background="@color/color_login_edittext"
+        android:textColor="@color/color_white"
+        android:ems="10"
+        android:padding="5dip" 
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textPassword" />
+ <!-- android:background="#29aae0"  -->      
+       <Button
+           android:id="@+id/create_account_register_button"
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           android:layout_alignRight="@+id/create_account_userid_edit"
+           android:layout_below="@+id/create_account_confirm_password_edit"
+           android:layout_marginTop="20dp"
+           android:layout_toRightOf="@+id/create_account_confirm_password_text"
+           android:background="@drawable/login_newaccount_button_selector"
+           android:text="@string/register"
+           android:typeface="sans" />
+
+</RelativeLayout>
+</ScrollView>

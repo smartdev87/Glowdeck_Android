@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/aboutParentScroll"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/color_darker_gray_bg" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="364dp"
+    android:background="@color/color_darker_gray_bg" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:resizeMode="horizontal|vertical"
+   		android:scaleType="fitXY" 
+    	android:adjustViewBounds="true"
+    	android:maxHeight="75dip" 
+    	android:maxWidth="175dip" 
+    	android:minHeight="75dip" 
+    	android:minWidth="175dip" 
+        android:src="@drawable/streams_beta" />
+     
+<!--  android:inputType="textMultiLine"  -->
+
+    <TextView
+        android:id="@+id/textViewSPPResponse"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/check_updates_textView"
+        android:layout_alignLeft="@+id/editTextGlowdeckSPP"
+        android:layout_alignRight="@+id/about_version_textview"
+        android:layout_below="@+id/buttonSendSPP"
+        android:layout_marginLeft="-20dp"
+        android:background="@color/color_gray_bg"
+        android:scrollbars="vertical"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:text="\n "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextGlowdeckSPP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:visibility="visible" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSendSPP"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editTextGlowdeckSPP"
+        android:layout_below="@+id/editTextGlowdeckSPP"
+        android:text="Send SPP"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/about_version_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="@string/build_version"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_off_white" />
+
+    <Button
+        android:id="@+id/buttonCopyResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSendSPP"
+        android:layout_marginTop="116dp"
+        android:layout_toLeftOf="@+id/buttonClearResponse"
+        android:text="Copy"
+        android:visibility="visible" />
+<!-- 
+    <TextView
+        android:id="@+id/check_updates_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonClearResponse"
+        android:layout_toLeftOf="@+id/about_version_textview"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="@string/about_check_update"
+        android:textColor="@color/color_streams_blue"
+        android:textSize="20sp" />
+ -->
+
+    <Button
+        android:id="@+id/buttonClearResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCopyResponse"
+        android:layout_alignBottom="@+id/buttonCopyResponse"
+        android:layout_alignRight="@+id/buttonSendSPP"
+        android:text="Clear"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/check_updates_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonClearResponse"
+        android:layout_alignRight="@+id/textViewSPPResponse"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="@string/about_upload_firmware"
+        android:textColor="@color/color_streams_blue"
+        android:textSize="20sp" />
+		
+</RelativeLayout>
+</ScrollView>

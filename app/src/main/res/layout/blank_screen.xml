@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray_bg"
+    
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:paddingTop="20dp"
+        android:layout_gravity="center" 
+        android:src="@drawable/streams_beta" />
+
+</LinearLayout>

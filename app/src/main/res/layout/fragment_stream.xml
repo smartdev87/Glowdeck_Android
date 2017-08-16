@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_darker_gray_bg" >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@color/color_darker_gray_bg"
+        android:paddingTop="2dp" >
+        <ImageView
+            android:id="@+id/fs_icon"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/color_darker_gray_bg"
+            android:paddingLeft="1dp"
+            android:src="@drawable/ic_launcher"
+            android:tag="@string/settings_icon" />
+        <ImageView
+            android:id="@+id/fs_icon_2"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/color_darker_gray_bg"
+            android:paddingLeft="1dp"
+            android:src="@drawable/ic_launcher"
+            android:tag="@string/settings_icon" />
+
+
+
+    <LinearLayout
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fs_icon"
+        android:layout_alignTop="@+id/fs_icon"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_weight="1"
+        android:background="@color/color_darker_gray_bg"
+        android:orientation="vertical"
+        android:paddingTop="2dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fs_icon"
+            android:layout_alignTop="@+id/fs_icon"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/fs_icon"
+            android:layout_weight="1"
+            android:background="@color/color_darker_gray_bg"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/fs_settings_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:background="@color/color_darker_gray_bg"
+                android:singleLine="true"
+                android:text="test1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_off_white" />
+
+            <TextView
+                android:id="@+id/frag_stream_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@color/color_darker_gray_bg"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="time"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_darker_off_white_text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fs_settings_sublabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="7dp"
+            android:background="@color/color_darker_gray_bg"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="test2"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_darker_off_white_text" />
+    </LinearLayout>
+
+
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/fs_network_image"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/color_darker_gray_bg"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:src="@drawable/ic_launcher_640" />
+
+    <ImageView
+        android:id="@+id/fs_separator2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fs_icon"
+        android:layout_marginTop="-2dp"
+        android:paddingBottom="0dp"
+        android:src="@drawable/straightlinewidertt" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

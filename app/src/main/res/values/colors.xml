@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_off_white">#dddddd</color>
+    <color name="color_off_off_white">#aaaaaa</color>
+    <color name="color_darker_off_white_text">#bbbbbb</color>
+    <color name="color_darker_gray_bg">#2e323d</color>
+     <color name="color_darker_gray">#ff3A3A3A</color>
+    <color name="color_gray_bg">#424756</color>
+    <color name="color_login_edittext">#484e5e</color>
+    <color name="color_streams_blue">#29aae0</color>
+    <color name="color_led_bg">#414655</color>
+    <color name="white">#ffffffff</color>
+     <color name="cyan">#ff00FFFF</color>
+      <color name="blue">#ff0000FF</color>
+      <color name="preftextcolor">#0099cc</color>
+    <color name="darkwhite">#ffeeeeee</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="semitransparent">#88000000</color>
+    <color name="orange">#ffff8800</color>
+    <color name="light_orange">#ffe27d18</color>
+    <color name="light_blue">#ff00a2e8</color>
+    <color name="black">#ff000000</color>
+    <color name="off_black">#ff444444</color>
+    <color name="cyan_new_up">#ff29aae0</color>
+    <color name="cyan_new_down">#7729aae0</color>
+    <color name="menuButtonColor">#ffea8e44</color>
+    <color name="buttonColorSetting">#ff414655</color>
+
+<!--    <color name="list_background">#303030</color> -->
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#2e323d</color>
+    <color name="list_background_pressed">#424756</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#424756</color>
+    <color name="counter_text_color">#c5c4c4</color>
+	<color name="prefs_text_color">#fff</color>
+</resources>

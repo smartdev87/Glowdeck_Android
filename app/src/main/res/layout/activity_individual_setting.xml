@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_darker_gray_bg"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/individual_settings_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:divider="@drawable/straightlinewider2"
+    
+        android:background="@color/color_darker_gray_bg"
+       />
+    
+</LinearLayout>

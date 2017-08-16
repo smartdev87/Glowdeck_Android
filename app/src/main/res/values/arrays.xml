@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="entries_listfont_preference">
+		<item>Small Font</item>
+		<item>Medium Font</item>
+		<item>Large Font</item>
+	</string-array>
+
+	<string-array name="entryvalues_listfont_preference">
+		<item>Small</item>
+		<item>Medium</item>
+		<item>Large</item>
+	</string-array>
+	
+	
+	<string-array name="entries_listicon_preference">
+		<item>Small Icon</item>
+		<item>Medium Icon</item>
+		<item>Large Icon</item>
+	</string-array>
+
+	<string-array name="entryvalues_listicon_preference">
+		<item>Small</item>
+		<item>Medium</item>
+		<item>Large</item>
+	</string-array>
+	
+	
+	<string-array name="equalizerOptions">
+	    <item>Off</item>
+	    <item>Bass Boost</item>
+	    <item>Treble Boost</item>
+	    <item>Rock</item>
+	    <item>Jazz</item>
+	</string-array>
+	
+	<string-array name="equalizerOptionsValues">
+	   
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	 </string-array>  
+	    
+	 <string-array name="SSIDOptions">
+	    <item>No network available</item>
+	</string-array>
+	
+	<string-array name="SSIDOptionsValues">
+	   
+	    <item>0</item>  
+	    
+	</string-array>
+	
+	<string-array name="privacyOptions">
+	    <item>Off</item>
+	    <item>Proximity</item>
+	    <item>Charge</item>
+	    
+	</string-array>
+	
+	<string-array name="privacyOptionsValues">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	   
+	</string-array>
+
+</resources>
