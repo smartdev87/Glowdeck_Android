@@ -324,6 +324,7 @@ public class MainActivity extends   Activity  {
         STREAM_TYPE_PUBLIC
     }
 
+    //flag variable for first open
     public static boolean mFirstOpen = true;
     /* (non-Javadoc)
      * @see android.app.Activity#onCreate(android.os.Bundle)
@@ -1620,7 +1621,7 @@ public class MainActivity extends   Activity  {
         return retVal ;
     }
 
-
+`
     /**
      *
      */
