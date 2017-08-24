@@ -1,14 +1,14 @@
 package com.plsco.glowdeck.drawer;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.os.Build;
+import android.app.Fragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,9 +16,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.view.View.OnClickListener;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.SeekBar;
@@ -26,16 +26,14 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.plsco.glowdeck.R;
 import com.plsco.glowdeck.colorpicker.AppConfig;
 import com.plsco.glowdeck.colorpicker.ColorPicker;
 import com.plsco.glowdeck.colorpicker.OpacityBar;
 import com.plsco.glowdeck.colorpicker.SVBar;
+import com.plsco.glowdeck.glowdeck.CurrentGlowdecks.GlowdeckDevice;
 import com.plsco.glowdeck.ui.MainActivity;
 import com.plsco.glowdeck.ui.StreamsApplication;
-import com.plsco.glowdeck.R;
-import com.plsco.glowdeck.glowdeck.CurrentGlowdecks.GlowdeckDevice;
-
-import java.lang.reflect.Array;
 
 
 /**
@@ -92,6 +90,7 @@ public class PickerFragment extends Fragment  { //implements  OnColorChangedList
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+
 
 		initial = true ; 
 	}

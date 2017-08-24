@@ -35,6 +35,8 @@
 
     <uses-permission android:name="android.permission.BATTERY_STATS"/>
 
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
 	<application android:allowBackup="true"
 		android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher"
 		android:label="@string/app_name" android:name="com.plsco.glowdeck.ui.StreamsApplication"
@@ -126,6 +128,8 @@
 		</receiver>
 
 		<service android:name="com.plsco.glowdeck.services.UpdaterService" />
+		<service android:name="com.plsco.glowdeck.services.RetrieveService" />
+
 
 
 	</application>

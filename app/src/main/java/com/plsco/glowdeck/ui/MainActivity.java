@@ -26,6 +26,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.format.DateFormat;
 import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.util.Log;
@@ -52,12 +53,15 @@ import com.plsco.glowdeck.drawer.StreamsDrawerItem;
 import com.plsco.glowdeck.drawer.StreamsDrawerListAdapter;
 import com.plsco.glowdeck.drawer.StreamsFragment;
 import com.plsco.glowdeck.glowdeck.CurrentGlowdecks;
+import com.plsco.glowdeck.services.RetrieveService;
 import com.plsco.glowdeck.services.UpdaterService;
 import com.plsco.glowdeck.settings.StreamsSettingsActivity;
 import com.plsco.glowdeck.R;
 import com.plsco.glowdeck.glowdeck.CurrentGlowdecks.GlowdeckDevice;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 
 /**
@@ -413,7 +417,7 @@ public class MainActivity extends   Activity  {
             ) {
                 public void onDrawerClosed(View view) {
                     String menuTitle = mTitle.toString();
-                    getActionBar().setTitle(menuTitle);
+                    setTitle(menuTitle);
 
                     // calling onPrepareOptionsMenu() to show action bar icons
                     invalidateOptionsMenu();
@@ -422,7 +426,7 @@ public class MainActivity extends   Activity  {
 
                 public void onDrawerOpened(View drawerView) {
                     String menuTitle = mDrawerTitle.toString();
-                    getActionBar().setTitle(menuTitle);
+                    setTitle(menuTitle);
 
 
                     invalidateOptionsMenu();
@@ -438,6 +442,11 @@ public class MainActivity extends   Activity  {
 
             mBatteryLevel = 0 ;
             registerReceiver(this.mBatInfoReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+
+
+            ////add ---------
+
+            startService(new Intent(MainActivity.this, RetrieveService.class));
         }catch(Exception e){e.printStackTrace();}
     } // done with onCreate()
 
@@ -450,6 +459,11 @@ public class MainActivity extends   Activity  {
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         // Sync the toggle msState after onRestoreInstanceState has occurred.
+
+        Calendar cal = Calendar.getInstance();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        cal.add(Calendar.Date, -1);
+
         try{
             mDrawerToggle.syncState();
             mDrawerLayout.setDrawerListener(mDrawerToggle);
@@ -1365,7 +1379,7 @@ public class MainActivity extends   Activity  {
     public void setTitle(CharSequence title) {
         try{
             mTitle = title;
-            getActionBar().setTitle(mTitle);
+            setTitle(mTitle);
         }catch(Exception e){e.printStackTrace();}
     }
 
@@ -1621,7 +1635,7 @@ public class MainActivity extends   Activity  {
         return retVal ;
     }
 
-`
+
     /**
      *
      */

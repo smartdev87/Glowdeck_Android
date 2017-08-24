@@ -197,6 +197,8 @@ public class StreamsDrawerListAdapter extends  BaseAdapter
 
 									validFound = true ;
 									txtTitle.setText(glowdeckDevice.getName()) ;
+									StreamsDrawerItem ss =mStreamsDrawerItems.get(position- MainActivity.DRAWER_GLOWDECK_DEVICES0);
+									ss.setTitle(glowdeckDevice.getName());
 									txtTitle.setTextColor( textColor) ;
 									imgIcon.setAlpha(1.0f) ;
 									if (glowdeckDevice.isConnected())
